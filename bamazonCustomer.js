@@ -75,12 +75,12 @@ The total cost of your order is $${totalCost}`);
                     
                 }
             }else{
-                console.log("All out");
+                console.log("This item is out of stock");
             }
             inquirer.prompt([{
                 name: 'anotherItem',
                 type: 'confirm',
-                message: 'Would you like another?'
+                message: 'Would you like to shop for another item?'
             }]).then((answer) =>
             {
                 if(answer.anotherItem === true){
